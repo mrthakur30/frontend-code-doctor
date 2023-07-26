@@ -22,7 +22,7 @@ export default function Home() {
     <main className="min-h-screen">
       <motion.nav
         initial={{ scale: 1.2 }}
-        transition={{ type: 'spring', stiffness: 200, damping: 60, duration: 3, ease: 'easeInOut' }}
+        transition={{ type: 'spring', stiffness: 200, damping: 60, duration: 3}}
         animate={{  scale: 1 }}
         className="flex flex-row   border-b border-b-white justify-between items-center px-8 py-2">
         <Image alt='' className="h-12 w-12" src={Logo}></Image>
