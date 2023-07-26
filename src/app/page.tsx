@@ -35,23 +35,23 @@ export default function Home() {
         className="flex flex-col justify-center gap-12 pt-10 px-8 items-center">
         <motion.p
           initial={{ y: 100, opacity: 0 }}
-          transition={{ type: 'spring', stiffness: 200, damping: 100 }}
-          animate={{ duration: 3, y: 0, opacity: 1 }}
+          transition={{ type: 'spring', stiffness: 200, damping: 100,duration: 3, }}
+          animate={{  y: 0, opacity: 1 }}
           className='fancy-text-one py-2  text-center text-5xl font-semibold '>Integrate AI Throughout Your Workflow</motion.p>
         <motion.span
           initial={{ y: 120, opacity: 0 }}
-          transition={{ type: 'spring', stiffness: 200, damping: 60 }}
-          animate={{ duration: 3, y: 0, opacity: 1 }}
+          transition={{ type: 'spring', stiffness: 200, damping: 60, duration: 3}}
+          animate={{  y: 0, opacity: 1 }}
           className='text-5xl font-mono'>Code Doctor</motion.span>
         <motion.p
           initial={{ y: 140, opacity: 0 }}
-          transition={{ type: 'spring', stiffness: 200, damping: 70 }}
-          animate={{ duration: 3, y: 0, opacity: 1 }}
+          transition={{ type: 'spring', stiffness: 200, damping: 70 , duration: 3}}
+          animate={{  y: 0, opacity: 1 }}
           className='text-xl text-center '>Make processes where AI collaborates with your team throughout <br /> the whole development process.</motion.p>
         <motion.button
           initial={{ y: 160, opacity: 0 }}
-          transition={{ type: 'spring', stiffness: 200, damping: 80 }}
-          animate={{ duration: 3, y: 0, opacity: 1 }}
+          transition={{ type: 'spring', stiffness: 200, damping: 80 , duration: 3}}
+          animate={{  y: 0, opacity: 1 }}
           onClick={scrollToBottom}
           className="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden  font-semibold text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
           <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
@@ -60,8 +60,8 @@ export default function Home() {
         </motion.button>
         <motion.div
           initial={{ y: 160, opacity: 0 }}
-          transition={{ type: 'spring', stiffness: 100, damping: 100 }}
-          animate={{ duration: 5, y: 0, opacity: 1 }}
+          transition={{ type: 'spring', stiffness: 100, damping: 100, duration: 5 }}
+          animate={{  y: 0, opacity: 1 }}
         >
           <Image alt='' className="" src={Img}></Image>
         </motion.div>
