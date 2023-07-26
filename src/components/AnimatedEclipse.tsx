@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import Rings from '../../public/rings.png'
 import { motion } from 'framer-motion';
 
 type Props = {}
