@@ -1,7 +1,6 @@
 "use client"
 import Image from 'next/image'
 import Img from '../../public/home.png'
-import Logo from '../../public/logo.png'
 import Rings from '../../public/rings.png'
 import { motion } from 'framer-motion'
 import { AnimatedEclipse } from '@/components/AnimatedEclipse'
@@ -20,14 +19,7 @@ export default function Home() {
 
   return (
     <main className="min-h-screen">
-      <motion.nav
-        initial={{ scale: 1.2 }}
-        transition={{ type: 'spring', stiffness: 200, damping: 60, duration: 3}}
-        animate={{  scale: 1 }}
-        className="flex flex-row   border-b border-b-white justify-between items-center px-8 py-2">
-        <Image alt='' className="h-12 w-12" src={Logo}></Image>
-        <button className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">XEROCODDE</button>
-      </motion.nav>
+      
 
       <motion.div
 
