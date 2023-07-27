@@ -18,7 +18,7 @@ export const Form = (props: Props) => {
         },
       });
 
-      if (response.status===200) {
+      if (response.status === 200) {
         toast.success('Form data sent successfully!');
       } else {
         toast.error('Error sending form data.');

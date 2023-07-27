@@ -22,9 +22,7 @@ const AdminPanel = () => {
     }
   };
 
-  const changeHandler = (e) => {
-    setQuery(e.target.value);
-  };
+
 
   useEffect(() => {
     fetchData();
@@ -52,7 +50,9 @@ const AdminPanel = () => {
         <p className="text-3xl w-full text-center font-semibold my-5">Email Data List</p>
         <input
           className="font-semibold p-3 m-5 outline-none bg-slate-950"
-          onChange={changeHandler}
+          onChange={(e) => {
+            setQuery(e.target.value);
+          }}
           value={query}
           placeholder="Enter to Search Name and Email"
         />
