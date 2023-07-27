@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-
+import toast, { Toaster } from 'react-hot-toast';
 type Props = {}
 
 export const Form = (props: Props) => {
@@ -8,8 +8,7 @@ export const Form = (props: Props) => {
 
   const handleSubmit = async (e: any) => {
     e.preventDefault();
-
-
+   
     const formData = { name, email };
     try {
 
@@ -22,12 +21,12 @@ export const Form = (props: Props) => {
       });
 
       if (response.ok) {
-        alert('Form data sent successfully!');
+        toast.success('Form data sent successfully!');
       } else {
-        alert('Error sending form data.');
+        toast.error('Error sending form data.');
       }
     } catch (error) {
-      alert('An error occurred.' + error);
+     toast.error('An error occurred.' + error);
     }
     setEmail('');
     setName('');
@@ -46,6 +45,7 @@ export const Form = (props: Props) => {
           Join 
         </span>
       </button>
+      <Toaster></Toaster>
     </form>
   )
 }
