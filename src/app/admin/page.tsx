@@ -30,7 +30,7 @@ const AdminPanel = () => {
 
   useEffect(() => {
     
-    const filteredData = fetchedData.filter((item) => {
+    const filteredData = fetchedData.filter((item : any) => {
       const lowerCaseQuery = query.toLowerCase();
       return (
         item.name.toLowerCase().includes(lowerCaseQuery) ||
