@@ -21,7 +21,7 @@ const Navbar = (props: Props) => {
           ADMIN DASHBOARD</button>
       </Link>
 
-   </motion.nav>
+    </motion.nav>
   )
 }
 

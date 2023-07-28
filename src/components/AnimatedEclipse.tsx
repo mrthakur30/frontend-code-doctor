@@ -29,7 +29,7 @@ export const AnimatedEclipse = (props: Props) => {
                     ease: 'easeInOut',
                 }}
 
-                className="  top-64 md:top-56 md:left-1/3 absolute " xmlns="http://www.w3.org/2000/svg" width="420" height="350" viewBox="0 0 538 475" fill="none">
+                className="  top-64 md:top-56 md:left-1/3 absolute " xmlns="http://www.w3.org/2000/svg" width="450" height="300" viewBox="0 0 538 475" fill="none">
 
 
                 <g filter="url(#filter0_f_6_78)">
@@ -56,7 +56,7 @@ export const AnimatedEclipse = (props: Props) => {
 
             <div
                 className="  top-96 w-1/3 left-28 md:top-80 md:left-[38%] absolute "
-                style={{ width: '35%', height: '25%', whiteSpace: 'nowrap' }}>
+                style={{ width: '35%', height: '25%', whiteSpace: 'nowrap' }} >
                 <motion.div
                     key={currentTextIndex}
                     style={{ display: 'inline-block' }}

@@ -6,7 +6,7 @@ import Loader from '@/components/Loader';
 
 const AdminPanel = () => {
   const [query, setQuery] = useState('');
-  const [fetchedData , setFetchedData] = useState([]);
+  const [fetchedData, setFetchedData] = useState([]);
   const [emailData, setEmailData] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -29,8 +29,8 @@ const AdminPanel = () => {
   }, []);
 
   useEffect(() => {
-    
-    const filteredData = fetchedData.filter((item : any) => {
+
+    const filteredData = fetchedData.filter((item: any) => {
       const lowerCaseQuery = query.toLowerCase();
       return (
         item.name.toLowerCase().includes(lowerCaseQuery) ||
