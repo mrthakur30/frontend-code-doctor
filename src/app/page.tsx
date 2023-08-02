@@ -115,7 +115,7 @@ export default function Home() {
       <div className=" grid grid-cols-1   place-items-center">
         <span className="fancy-text-two text-center mb-5  font-roboto font-semibold text-4xl">Use AI to handle workflows in your chat platforms.</span>
         <div className="flex md:flex-row flex-col w-full mt-10 mb-14 justify-center ">
-          <div className="h-64 mx-8 md:w-[35%] bg-white bg-opacity-10 relative p-4 rounded-2xl grid overflow-clip ">
+          <div className="h-64 mb-14 mx-8 md:w-[35%] bg-white bg-opacity-10 relative p-4 rounded-2xl grid overflow-clip ">
             <div className="flex flex-col gap-4">
               <p className="fancy-text-two text-3xl  md:text-4xl">ask questions</p>
               <p>To assist with managing the development, testing, and <br className=" md:block hidden" /> deployment process, ask it questions or issue instructions.</p>
